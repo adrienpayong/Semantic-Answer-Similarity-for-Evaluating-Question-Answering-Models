@@ -37,6 +37,8 @@ The evaluation uses subsets of three existing datasets: SQuAD, GermanQuAD, and N
 - dissimilar answers
 - approximately similar answers
 - equivalent answers
+
+
 ![source](https://github.com/adrienpayong/object-detection/blob/main/table1b.png)
 
 **SQuAD**: the researchers annotate the semantic similarity of pairs of answers in a subset of the English-language SQuAD test dataset (Rajpurkar et al., 2018). They consider a subset where 566 pairs of ground-truth answers have an F1-score of 0 (no lexical overlap of the answers) and 376 pairs have an F1-score larger than 0 (some lexical overlap of the answers). The resulting dataset comprises 942 pairs of answers each with a majority vote indicating either dissimilar answers, approximately similar answers, or equivalent answers.
