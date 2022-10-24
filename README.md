@@ -48,3 +48,6 @@ swers, in which case the F1-score and BLEU are 0.
 **Embedding Extraction for BERTScore**:
 - BERT-Score can be used with different language models to generate contextual embeddings of text inputs. While the embeddings are typically extracted from the last layer of the model, they can be extracted from any of its layers and related work has shown that for some tasks the last layer is not the best (Liu
 et al., 2019). 
+- The experiment visualized in Figure 2 evaluates the correlation between human judgment of semantic answer similarity and a vanilla and a trained BERTScore model. 
+- Comparing the extraction of embeddings from the different layers, the researchers find that the last layer drastically outperforms all other models for the trained model. 
+- For the vanilla BERTScore model, the choice of the layer has a much smaller influence on the performance, with the first two layers resulting in the strongest correlation with human judgment. 
