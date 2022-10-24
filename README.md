@@ -69,3 +69,6 @@ et al., 2019).
 ## Conclusion
 Current evaluation metrics for QA models are limited in that they check for lexical or positional overlap of ground-truth answers and predictions but do not take into account semantic similarity. In this paper,we present SAS, a semantic answer similarity metric that overcomes this limitation. It leverages a cross-encoder architecture and transformer-based language models, which are  re-trained on STS datasets that have not been used in the context of
 QA so far. 
+
+## References
+[Semantic Answer Similarity for Evaluating Question Answering Models](https://arxiv.org/abs/2108.06130)
