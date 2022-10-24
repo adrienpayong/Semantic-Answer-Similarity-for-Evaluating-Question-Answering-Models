@@ -54,6 +54,8 @@ swers, in which case the F1-score and BLEU are 0.
 - All four semantic answer similarity approaches outperform the traditional metrics and among them, the cross-encoder model is consistently achieving the strongest correlation with human judgment except for slightly underperforming the trained BERTScore metric with regard to τ on English-language pairs of answers with no lexical overlap.
 - This result shows that semantic similarity metrics are needed in addition to lexical-based metrics for automated evaluation of QA models. The former correlate much better with human judgment and thus, are a better estimation of a model’s performance in real-world applications.
 
+![source](https://github.com/adrienpayong/object-detection/blob/main/table1.png)
+
 **Embedding Extraction for BERTScore**:
 - BERT-Score can be used with different language models to generate contextual embeddings of text inputs. While the embeddings are typically extracted from the last layer of the model, they can be extracted from any of its layers and related work has shown that for some tasks the last layer is not the best (Liu
 et al., 2019). 
