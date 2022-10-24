@@ -26,3 +26,13 @@ roberta-sentence-transformer and is available on the huggingface model hub.
 
 **BERTScore vanilla or trained**: The BERTScore vanilla approach uses the task-agnostic, pre-trained language models bert-base-uncased for the English-
 language datasets and deepset/gelectra-base for the German-language dataset. In line with the approach by Zhang et al. (2020), the researchers use the language models to generate contextual embeddings, match the embeddings of the tokens in the ground- truth answer and in the prediction and take the maximum cosine similarity of the matched tokens as the similarity score of the two answers. 
+
+## Experiments
+To evaluate the ability of the different approaches to estimate semantic answer similarity, the researchers measure their correlation with human judgment of similarity on three datasets. 
+### Datasets
+The evaluation uses subsets of three existing datasets: SQuAD, GermanQuAD, and NQ-open. We process and hand-annotate the datasets as de- scribed in the following so that each of the processed subsets contains pairs of answers and a class label that indicates their semantic similarity. are three similarity classes: dissimilar answers, approximately similar answers, and equivalent answers, which are all described in Table 1.
+
+**SQuAD**: the researchers annotate the semantic similarity of pairs of answers in a subset of the English-language SQuAD test dataset (Rajpurkar et al., 2018). They consider a subset where 566 pairs of ground-truth answers have an F1-score of 0 (no lexical overlap of the answers) and 376 pairs have an F1-score larger than 0 (some lexical overlap of the answers). The resulting dataset comprises 942 pairs of answers each with a majority vote indicating either dissimilar answers, approximately similar answers, or equivalent answers.
+
+**GermanQuAD**: To show that the presented approaches also work on non-English datasets, they consider the German-language GermanQuAD dataset (Möller et al., 2021) which contains a three-way annotated test set, which means there are three correct answers given for each question.
+**NQ-open**: The original Natural Questions dataset (NQ) (Kwiatkowski et al., 2019) was meant for reading comprehension but Lee et al. (2019) adapted the dataset for open-domain QA and it has been released under the name NQ-open. We use the test dataset of NQ-open as it contains not only questions and ground-truth answers but also model predictions and annotations how similar these predictions are to the ground-truth answer. 
