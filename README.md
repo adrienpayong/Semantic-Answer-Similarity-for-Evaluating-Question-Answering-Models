@@ -13,7 +13,7 @@ If a dataset contains multi-way annotations, there can be multiple different gro
 of a prediction over all ground-truth answers is used in that case, which works with all the metrics above. However, a problem is that sometimes only one correct answer is annotated when in fact there are multiple correct answers in a document. 
 
 If the multiple correct answers are semantically but not lexically the same, existing metrics require all correct answers within a document to be annotated and cannot be used reliably otherwise. Figure 1 gives an example of a context, a question, multiple groundtruth answers, a prediction and different similarity scores. the existing metrics cannot capture the semantic similarity of the prediction and the ground-truth answers but are limited to lexical similarity. Given the shortcomings of the existing metrics, a novel metric for QA is needed and we address this challenge by presenting SAS, a cross-encoder- based semantic answer similarity metric.
-![source](https://github.com/adrienpayong/object-detection/blob/main/table1a.png)
+                               ![source](https://github.com/adrienpayong/object-detection/blob/main/table1a.png)
 ## Approach 
 The researchers consider four different approaches to estimate the semantic similarity of pairs of answers: 
 - bi-encoder approach
