@@ -51,3 +51,8 @@ et al., 2019).
 - The experiment visualized in Figure 2 evaluates the correlation between human judgment of semantic answer similarity and a vanilla and a trained BERTScore model. 
 - Comparing the extraction of embeddings from the different layers, the researchers find that the last layer drastically outperforms all other models for the trained model. 
 - For the vanilla BERTScore model, the choice of the layer has a much smaller influence on the performance, with the first two layers resulting in the strongest correlation with human judgment. 
+- For comparison, Figure 2 also includes the results of a cross-encoder model, which does not have the option to choose different layers due to its architecture.
+
+## Conclusion
+Current evaluation metrics for QA models are limited in that they check for lexical or positional overlap of ground-truth answers and predictions but do not take into account semantic similarity. In this paper,we present SAS, a semantic answer similarity metric that overcomes this limitation. It leverages a cross-encoder architecture and transformer-based language models, which are  re-trained on STS datasets that have not been used in the context of
+QA so far. 
