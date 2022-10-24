@@ -16,4 +16,10 @@ The researchers consider four different approaches to estimate the semantic simi
 - bi-encoder approach
 - cross-encoder approach
 - vanilla version of BERTScore
-- trained version of BERTScore. 
+- trained version of BERTScore
+
+**Bi-Encoder**: The bi-encoder approach is based on the sentence transformers architecture (Reimers and Gurevych, 2019), which is a siamese neural network architecture comprising two language models that encode the two text inputs and cosine similarity to calculate a similarity score of the two encoded texts. The model that use is based on xlm-roberta-base, where the training has been continued on an unreleased multi-lingual paraphrase dataset. The resulting model, called paraphrase-xlm-r-multilingual-v1, has then been fine-tuned on the English-language STS benchmark
+dataset (Cer et al., 2017) and a machine-translated German-language version3 of the same data. The final model is called T-Systems-onsite/cross-en-de-
+roberta-sentence-transformer and is available on the huggingface model hub.
+**SAS**: Our new approach called SAS differs from the bi-encoder in that it does not calculate separate embeddings for the input texts. Instead, we use a cross-encoder architecture, where the two texts are concatenated with a special separator token in between. The underlying language model is called cross-encoder/stsb-roberta-large and has been trained on the STS benchmark dataset (Ceret al., 2017).
+**BERTScore vanilla or trained**:
