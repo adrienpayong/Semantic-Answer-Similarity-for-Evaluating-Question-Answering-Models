@@ -25,7 +25,7 @@ The researchers consider four different approaches to estimate the semantic simi
 dataset (Cer et al., 2017) and a machine-translated German-language version3 of the same data. The final model is called T-Systems-onsite/cross-en-de-
 roberta-sentence-transformer and is available on the huggingface model hub.
 
-**SAS**: Our new approach called SAS differs from the bi-encoder in that it does not calculate separate embeddings for the input texts. Instead, we use a cross-encoder architecture, where the two texts are concatenated with a special separator token in between. The underlying language model is called cross-encoder/stsb-roberta-large and has been trained on the STS benchmark dataset (Ceret al., 2017).
+**SAS**:SAS differs from the bi-encoder in that it does not calculate separate embeddings for the input texts. Instead, the researchers use a cross-encoder architecture, where the two texts are concatenated with a special separator token in between. The underlying language model is called cross-encoder/stsb-roberta-large and has been trained on the STS benchmark dataset (Ceret al., 2017).
 
 **BERTScore vanilla or trained**: The BERTScore vanilla approach uses the task-agnostic, pre-trained language models bert-base-uncased for the English-
 language datasets and deepset/gelectra-base for the German-language dataset. In line with the approach by Zhang et al. (2020), the researchers use the language models to generate contextual embeddings, match the embeddings of the tokens in the ground- truth answer and in the prediction and take the maximum cosine similarity of the matched tokens as the similarity score of the two answers. 
