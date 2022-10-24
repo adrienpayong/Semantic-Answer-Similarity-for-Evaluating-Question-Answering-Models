@@ -13,7 +13,7 @@ tic similarity of the prediction and the ground-truth answers but are limited to
 a novel metric for QA is needed and we address this challenge by presenting SAS, a cross-encoder- based semantic answer similarity metric.
 ## Approach 
 The researchers consider four different approaches to estimate the semantic similarity of pairs of answers: 
-- a bi-encoder approach
-- a cross-encoder approach
-- a vanilla version of BERTScore
-- trained ver-sion of BERTScore. 
+- bi-encoder approach
+- cross-encoder approach
+- vanilla version of BERTScore
+- trained version of BERTScore. 
