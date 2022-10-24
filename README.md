@@ -41,3 +41,10 @@ The evaluation uses subsets of three existing datasets: SQuAD, GermanQuAD, and N
 - The traditional metrics ROUGE-L and METEOR have very weak correlation with human judgement if there is no lexical overlap between the pair of an-
 swers, in which case the F1-score and BLEU are 0.
 - If there is some lexical overlap, the correlation is stronger for all these metrics but BLEU lags far behind the others. METEOR is outperformed by ROUGE-L and F1-score, which achieve almost equal correlation. 
+- METEOR is outperformed by ROUGE-L and F1-score, which achieve almost equal correlation.
+- All four semantic answer similarity approaches outperform the traditional metrics and among them, the cross-encoder model is consistently achieving the strongest correlation with human judgment except for slightly underperforming the trained BERTScore metric with regard to τ on English-language pairs of answers with no lexical overlap.
+- This result shows that semantic similarity metrics are needed in addition to lexical-based metrics for automated evaluation of QA models. The former correlate much better with human judgment and thus, are a better estimation of a model’s performance in real-world applications.
+
+**Embedding Extraction for BERTScore**:
+- BERT-Score can be used with different language models to generate contextual embeddings of text inputs. While the embeddings are typically extracted from the last layer of the model, they can be extracted from any of its layers and related work has shown that for some tasks the last layer is not the best (Liu
+et al., 2019). 
