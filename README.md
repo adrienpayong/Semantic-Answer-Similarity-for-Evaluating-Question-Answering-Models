@@ -1,4 +1,4 @@
-# Review of the paper Semantic Answer Similarity for Evaluating Question Answering Models
+# Review - Semantic Answer Similarity for Evaluating Question Answering Models
 ## Introduction
 The evaluation of question answering (QA) models relies on human-annotated datasets of question-answer pairs. Given a question, the ground-truth answer is compared to the answer predicted by a model with regard to different similarity metrics. Currently, the most prominent metrics for the evaluation of QA models are:
 - exact match (EM)
