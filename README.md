@@ -72,3 +72,5 @@ QA so far.
 
 ## References
 [Semantic Answer Similarity for Evaluating Question Answering Models](https://arxiv.org/abs/2108.06130)
+
+[Finding similar documents with transformers(spanish)](https://github.com/adrienpayong/Semantic-Answer-Similarity-for-Evaluating-Question-Answering-Models/blob/main/Sematinc_Search_Spanish.ipynb)
